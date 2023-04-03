@@ -2,9 +2,9 @@ HOST_NAME=wakanda
 
 source ~/.nvm/nvm.sh
 nvm use stable
-shopt -s autocd
 shopt -s histappend
 
+export PATH="/opt/homebrew/bin:$PATH"
 export PATH=$PATH:$HOME/bin
 
 export HISTSIZE=5000
@@ -37,8 +37,6 @@ PROMPT_COMMAND=print_before_the_prompt
 PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 PS1="$EMOJI >"
 
-fortune | cowsay -f tux
-
 function mkcd()
 {
 	mkdir $1 && cd $1
@@ -47,7 +45,7 @@ function mkcd()
 # -------
 # Aliases
 # -------
-alias 🍺="git checkout -b drunk"
+alias python=python3 #create alias for macOS
 alias a='code .'
 alias c='code .'
 alias reveal-md="reveal-md --theme night --highlight-theme hybrid --port 1337"

@@ -1,5 +1,5 @@
 [user]
-  name   = Camille Tomlin
+  name   = Camille
   email  = you@example.com
 [github]
   user   = camilleatwork
@@ -15,9 +15,5 @@
   cob    = checkout -b
   co     = checkout
   fp     = fetch --prune --all
-  l      = log --oneline --decorate --graph
-  lall   = log --oneline --decorate --graph --all
-  ls     = log --oneline --decorate --graph --stat
-  lt     = log --graph --decorate --pretty=format:'%C(yellow)%h%Creset%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset'
-  [init]
+ [init]
 	defaultBranch = main
